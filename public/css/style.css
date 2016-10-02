@@ -1,4 +1,112 @@
-h1 {
-  color: #F282DA; }
+body, .page {
+  overflow: auto;
+  margin: 0; }
+
+div {
+  box-sizing: border-box; }
+
+nav {
+  position: fixed;
+  right: 200px; }
+  nav a {
+    color: #0A0A0A; }
+
+a {
+  color: transparent; }
+
+.page {
+  height: 100vh; }
+
+.bw-hover {
+  position: fixed;
+  font-family: "Space Mono", monospace;
+  right: 0;
+  content: " ";
+  width: 150px;
+  height: 100px;
+  padding-top: 35px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+  .bw-hover:hover {
+    opacity: 1;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #0A0A0A;
+    color: #FFFFFF;
+    width: 140px;
+    height: 70px;
+    border-radius: 0 0 0 50%;
+    -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
+    -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
+    transition: all 0.5s ease-in-out, text-align, padding-top; }
+    .bw-hover:hover::after {
+      content: "back to top"; }
+
+.name-wrapper {
+  width: auto;
+  min-height: 300px; }
+
+.my-name {
+  text-transform: lowercase;
+  opacity: 0.6;
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  font-size: 3em;
+  margin: 0 10px;
+  letter-spacing: -2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out; }
+  .my-name:first-child {
+    color: #2BD7F2;
+    z-index: 3; }
+    .my-name:first-child::before {
+      content: "BARNABAS"; }
+  .my-name:nth-child(2) {
+    color: #FFEA32;
+    opacity: 1;
+    z-index: 2;
+    margin-top: 20px; }
+    .my-name:nth-child(2)::before {
+      content: "CHAN"; }
+  .my-name:last-child {
+    color: #F282DA;
+    margin-top: 40px; }
+    .my-name:last-child::before {
+      content: "XIN ZHI"; }
+
+#projects {
+  background-color: #001D42;
+  color: #FFFFFF; }
+  #projects div {
+    display: inline-block; }
+
+#hexagon {
+  width: 100px;
+  height: 55px;
+  background: #FFFFFF;
+  position: relative;
+  margin: 50px 20px; }
+  #hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 25px solid #FFFFFF; }
+  #hexagon:after {
+    content: "";
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 25px solid #FFFFFF; }
 
 /*# sourceMappingURL=style.css.map */

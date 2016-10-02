@@ -1,0 +1,55 @@
+// ELEMENTS
+
+
+// CLASSES
+
+.name-wrapper {
+  width: auto;
+  min-height: 300px;
+}
+
+.my-name {
+  text-transform: lowercase;
+  opacity: 0.6;
+  position: absolute;
+  font-family: $space;
+  font-size: 3em;
+  margin: 0 10px;
+  letter-spacing: -2px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+
+  &:first-child {
+    color: $lightblue;
+    z-index: 3;
+
+    &::before{
+      content: "BARNABAS";
+    }
+  }
+
+  &:nth-child(2) {
+    color: $yellow;
+    opacity: 1;
+    z-index: 2;
+    margin-top: 20px;
+
+    &::before{
+      content: "CHAN";
+    }
+  }
+
+  &:last-child {
+    color: $lightpink;
+    margin-top: 40px;
+
+    &::before{
+      content: "XIN ZHI";
+    }
+  }
+
+
+}
+
+// IDS

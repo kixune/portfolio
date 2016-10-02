@@ -11,17 +11,34 @@
     <!-- JQuery -->
     <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,700" rel="stylesheet">
+
 
 
   </head>
 
   <body>
+    <a href="#">
+      <div class="bw-hover"></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+      <% include pages/index %>
+      <% include pages/about %>
+      <% include pages/projects %>
+      <% include pages/contact %>
 
-    <% include partials/header %>
 
-      <%- body %>
 
-    <% include partials/footer %>
+
 
     <script type="text/javascript" src="/js/script.js"></script>
   </body>
