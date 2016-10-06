@@ -1,0 +1,31 @@
+.dare {
+  background: url('https://static.pexels.com/photos/6672/snow-forest-trees-winter.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.red-box {
+  font-family: $arimo;
+  font-size: 3em;
+  letter-spacing: 10px;
+  color: $coquelicot;
+  text-align: center;
+  border: 5px solid $coquelicot;
+  width: 200px;
+  margin: 100px auto;
+  padding: 8px 10px;
+  display: block;
+  opacity: 0.7;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+
+  &:hover {
+    color: $white;
+    border: 5px solid $white;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+
+  }
+}

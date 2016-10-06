@@ -1,0 +1,86 @@
+.loader {
+  text-align: center;
+}
+
+#loader {
+  width: 40px;
+  height: 40px;
+  margin: 300px auto;
+  margin-bottom: 10px;;
+  background-color: $lightblue;
+  display: block;
+  border-radius: 100%;
+  -webkit-animation: blink 1.2s infinite ease-in-out;
+  animation: blink 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scale(0);
+  }
+
+  33% {
+    background-color: $yellow;
+  }
+
+  66% {
+    background-color: $lightpink;
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes blink {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  }
+
+  33% {
+    background-color: $yellow;
+  }
+
+  66% {
+    background-color: $lightpink;
+  }
+
+  100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+#loading-text {
+
+  -webkit-animation: three-dots 6s infinite ease-in-out;
+  animation: three-dots 6s infinite ease-in-out;
+
+}
+
+@-webkit-keyframes three-dots {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes three-dots {
+  0% {
+    opacity: 1
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

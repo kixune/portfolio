@@ -1,0 +1,76 @@
+.wear {
+  background: url('https://static.pexels.com/photos/40139/pexels-photo-40139.jpeg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.black-box {
+  text-transform: uppercase;
+  font-family: $space;
+  font-size: 1em;
+  background-color: rgba(0,0,0,1);
+  color: $white;
+  text-align: center;
+  margin: 3px 0;
+  padding: 10px;
+  display: inline-block;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.two, .three, .four, .five, .seven {
+  position: relative;
+
+}
+
+.two, .five {
+  
+  &::after {
+    border-bottom: 0.7em solid $white;
+    content: "";
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 38%;
+  }
+}
+
+.three {
+
+  &::after {
+    border-bottom: 0.6em solid $white;
+    content: "";
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 35%;
+  }
+}
+
+.four {
+
+  &::after {
+    border-bottom: 0.5em solid $white;
+    content: "";
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+}
+
+.seven {
+
+  &::after {
+    border-bottom: 0.6em solid $white;
+    content: "";
+    left: 0;
+    line-height: 1em;
+    position: absolute;
+    right: 0;
+    top: 40%;
+  }
+}

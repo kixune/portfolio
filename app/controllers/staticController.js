@@ -2,9 +2,17 @@ module.exports = {
 
   // Home Page
   index: function(req, res) {
-       res.render('pages/index', {
-         title: 'Home'
-       }); //load the index.ejs file
+    res.render('pages/index', {
+        title: 'Barn Chan'
+    });
+  },
+
+  // Secret Page
+  secret: function(req, res) {
+    res.render('pages/secret', {
+        title: 'secret'
+    });
   }
+
 
  };

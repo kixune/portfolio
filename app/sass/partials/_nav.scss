@@ -1,0 +1,42 @@
+nav {
+  z-index: 1000;
+  position: fixed;
+  right: 43%;
+  bottom: 100px;
+
+  ul {
+    list-style: none;
+  }
+}
+
+
+.bw-hover {
+    position: fixed;
+    font-family: $space;
+    right: 0;
+    content: " ";
+    width: 150px;
+    height: 100px;
+    padding-top: 20px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+    text-align: center;
+    background-color: $black;
+    color: $white;
+    width: 140px;
+    height: 70px;
+
+    border-radius: 0 0 0 50%;
+    -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
+    -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
+    transition: all 0.5s ease-in-out, text-align, padding-top;
+
+    &::after {
+      content: "back to top";
+    }
+  }
+}

@@ -3,10 +3,17 @@
 
 
 // Common Across All Pages
+@import "partials/loader";
 @import "partials/common";
+@import "partials/nav";
 
 // Specific to Pages
+@import "pages/dare";
+@import "pages/wear";
 @import "pages/index";
 @import "pages/about";
 @import "pages/projects";
-@import "pages/contact"
+@import "pages/contact";
+@import "pages/secret";
+
+@import "pages/construction";
