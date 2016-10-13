@@ -5,6 +5,6 @@ console.log(loader);
 $(function() {
 
   // Hide the loader
-	let loader = $(".loader.page");
-  loader.hide();
+	var loaded = $(".loader.page");
+  loaded.hide();
 });
