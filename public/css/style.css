@@ -74,12 +74,15 @@ a {
   height: 100vh; }
 
 nav {
+  width: 100%;
   z-index: 1000;
   position: fixed;
-  right: 43%;
-  bottom: 100px; }
+  top: 0; }
   nav ul {
-    list-style: none; }
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around; }
 
 .bw-hover {
   position: fixed;
@@ -89,6 +92,7 @@ nav {
   width: 150px;
   height: 100px;
   padding-top: 20px;
+  border-bottom-left-radius: 10%;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
@@ -99,7 +103,7 @@ nav {
     color: #FFFFFF;
     width: 140px;
     height: 70px;
-    border-radius: 0 0 0 50%;
+    border-bottom-left-radius: 50%;
     -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
     -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
     transition: all 0.5s ease-in-out, text-align, padding-top; }

@@ -35,6 +35,7 @@
     z-index: 2;
     margin-top: 20px;
 
+
     &::before{
       content: "CHAN";
     }
@@ -43,6 +44,7 @@
   &:last-child {
     color: $lightpink;
     margin-top: 40px;
+
 
     &::before{
       content: "XIN ZHI";
