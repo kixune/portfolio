@@ -1,4 +1,21 @@
-.construction {
-  margin-left: 20px;
-  font-size: 4em;
+.temp {
+  background-color: $blueprint;
+  color: $white;
+
+}
+
+.wrapper {
+  text-align: center;
+  margin: 270px;
+}
+
+.fa-exclamation-triangle {
+  color: $mustard;
+}
+
+details, summary {
+  cursor: s-resize;
+  &:focus {
+    outline: none;
+  }
 }

@@ -4,5 +4,5 @@ module.exports = function(app) {
   // Home Page
   app.get('/', staticController.index);
 
-  app.get('/secret', staticController.secret);
+  app.get('/cabin', staticController.secret);
 };

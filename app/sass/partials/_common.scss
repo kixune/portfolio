@@ -8,11 +8,17 @@ body, .page{
   margin: 0;
 }
 
+h1 {
+  margin: 0;
+  font-family: $arimo;
+}
 
-
+p, span, summary {
+  font-family: $karla;
+}
 
 a {
-  color: $black;
+  color: $coquelicot;
   text-decoration: none;
 }
 

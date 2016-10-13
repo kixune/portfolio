@@ -3,7 +3,7 @@ module.exports = {
   // Home Page
   index: function(req, res) {
     res.render('pages/index', {
-        title: 'Barn Chan'
+        title: 'ba la ba cha'
     });
   },
 

@@ -59,8 +59,15 @@ body, .page {
   overflow: auto;
   margin: 0; }
 
+h1 {
+  margin: 0;
+  font-family: "Arimo", sans-serif; }
+
+p, span, summary {
+  font-family: "Karla", sans-serif; }
+
 a {
-  color: #0A0A0A;
+  color: #FC3600;
   text-decoration: none; }
 
 .page {
@@ -76,7 +83,7 @@ nav {
 
 .bw-hover {
   position: fixed;
-  font-family: "Space Mono", monospace;
+  font-family: "Karla", sans-serif;
   right: 0;
   content: " ";
   width: 150px;
@@ -99,88 +106,6 @@ nav {
     .bw-hover:hover::after {
       content: "back to top"; }
 
-.dare {
-  background: url("https://static.pexels.com/photos/6672/snow-forest-trees-winter.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover; }
-
-.red-box {
-  font-family: "Arimo", sans-serif;
-  font-size: 3em;
-  letter-spacing: 10px;
-  color: #FC3600;
-  text-align: center;
-  border: 5px solid #FC3600;
-  width: 200px;
-  margin: 100px auto;
-  padding: 8px 10px;
-  display: block;
-  opacity: 0.7;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-  .red-box:hover {
-    color: #FFFFFF;
-    border: 5px solid #FFFFFF;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
-
-.wear {
-  background: url("https://static.pexels.com/photos/40139/pexels-photo-40139.jpeg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  background-size: cover; }
-
-.black-box {
-  text-transform: uppercase;
-  font-family: "Space Mono", monospace;
-  font-size: 1em;
-  background-color: black;
-  color: #FFFFFF;
-  text-align: center;
-  margin: 3px 0;
-  padding: 10px;
-  display: inline-block;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
-
-.two, .three, .four, .five, .seven {
-  position: relative; }
-
-.two::after, .five::after {
-  border-bottom: 0.7em solid #FFFFFF;
-  content: "";
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 38%; }
-
-.three::after {
-  border-bottom: 0.6em solid #FFFFFF;
-  content: "";
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 35%; }
-
-.four::after {
-  border-bottom: 0.5em solid #FFFFFF;
-  content: "";
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 40%; }
-
-.seven::after {
-  border-bottom: 0.6em solid #FFFFFF;
-  content: "";
-  left: 0;
-  line-height: 1em;
-  position: absolute;
-  right: 0;
-  top: 40%; }
-
 .face {
   background-position: fixed; }
 
@@ -197,7 +122,7 @@ nav {
   text-transform: lowercase;
   opacity: 0.6;
   position: absolute;
-  font-family: "Space Mono", monospace;
+  font-family: "Arimo", sans-serif;
   font-size: 3em;
   margin: 0 10px;
   letter-spacing: -2px;
@@ -222,11 +147,26 @@ nav {
     .my-name:last-child::before {
       content: "XIN ZHI"; }
 
+.proj-list {
+  margin-top: 80px;
+  margin-left: 10px; }
+  .proj-list ul {
+    list-style: none; }
+    .proj-list ul li {
+      font-size: 2.5em;
+      line-height: 2;
+      font-family: "Arimo", sans-serif;
+      font-weight: 700;
+      text-transform: capitalize; }
+
+.big-text {
+  font-size: 3em;
+  font-weight: 700;
+  color: #001D42; }
+
 #projects {
   background-color: #001D42;
   color: #FFFFFF; }
-  #projects div {
-    display: inline-block; }
 
 #hexagon {
   width: 100px;
@@ -234,7 +174,8 @@ nav {
   line-height: 50px;
   background: #FFFFFF;
   position: relative;
-  margin: 50px 20px; }
+  margin: 50px 20px;
+  padding-left: 4px; }
   #hexagon:before {
     content: "";
     position: absolute;
@@ -268,10 +209,10 @@ iframe {
 
 .hidden {
   width: 100%;
-  height: 40px;
+  height: 50px;
   display: block;
   position: absolute;
-  bottom: 10px;
+  bottom: 0;
   right: 60px; }
 
 .secret {
@@ -284,8 +225,20 @@ iframe {
   left: 0;
   color: white; }
 
-.construction {
-  margin-left: 20px;
-  font-size: 4em; }
+.temp {
+  background-color: #001D42;
+  color: #FFFFFF; }
+
+.wrapper {
+  text-align: center;
+  margin: 270px; }
+
+.fa-exclamation-triangle {
+  color: #FCCC53; }
+
+details, summary {
+  cursor: s-resize; }
+  details:focus, summary:focus {
+    outline: none; }
 
 /*# sourceMappingURL=style.css.map */
