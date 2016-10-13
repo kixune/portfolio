@@ -3,7 +3,17 @@
   box-sizing: border-box;
 }
 
-body, .page{
+body {
+  opacity: 1;
+  transition: 1.3s opacity;
+
+  &.fade {
+    opacity: 0;
+    transition: none;
+  }
+}
+
+body, .page {
   overflow: auto;
   margin: 0;
 }

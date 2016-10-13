@@ -25,12 +25,13 @@
 
   </head>
 
-  <body>
-    
+  <body class="fade">
+    <script>document.body.className += ' fade';</script>
+
     <% include partials/loader %>
 
 
-      <%- body %>
+      <% include pages/construction %>
 
 
 

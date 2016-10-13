@@ -55,6 +55,13 @@
 * {
   box-sizing: border-box; }
 
+body {
+  opacity: 1;
+  transition: 1.3s opacity; }
+  body.fade {
+    opacity: 0;
+    transition: none; }
+
 body, .page {
   overflow: auto;
   margin: 0; }
@@ -112,11 +119,6 @@ nav {
 
 .face {
   background-position: fixed; }
-
-.bl-bar {
-  width: 100%;
-  height: 2vh;
-  background-color: #000000; }
 
 .name-wrapper {
   width: auto;

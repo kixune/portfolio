@@ -9,3 +9,8 @@ $.getScript('/js/nav.js', function() {
 $.getScript('/js/smoothscroll.js', function() {
   console.log(smooth);
 });
+
+
+$(function() {
+    $('body').removeClass('fade');
+});
