@@ -13,9 +13,13 @@ body {
   }
 }
 
-body, .page {
+body, section {
   overflow: auto;
   margin: 0;
+}
+
+section {
+  min-height: 100vh;
 }
 
 h1 {
@@ -28,14 +32,6 @@ p, span, summary {
 }
 
 a {
-  color: $coquelicot;
+  color: $black;
   text-decoration: none;
-}
-
-
-
-// CLASSES
-
-.page {
-  height: 100vh;
 }

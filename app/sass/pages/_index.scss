@@ -1,3 +1,124 @@
-.face {
-  background-position: fixed;
+
+.shape-wrap {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  width: 200px;
+  margin-left: -100px;
+}
+
+
+.hex-wrap {
+  position: absolute;
+  top: 60%;
+
+}
+
+.hexagon {
+  width: 150px;
+  height: 82px;
+  line-height: 50px;
+  background: $lightpink;
+  position: relative;
+  z-index: 200;
+
+
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+  }
+
+  &:before {
+    top: -45%;
+    border-bottom: 37px solid $lightpink;
+  }
+
+  &:after {
+    bottom: -45%;
+    border-top: 37px solid $lightpink;
+  }
+}
+
+.hexagon.inner {
+  background-color: $white;
+  -webkit-animation: inner-tilt 3.2s infinite;
+  animation: inner-tilt 3.2.4s infinite;
+
+  &:before {
+    border-bottom: 37px solid $white;
+  }
+
+  &:after {
+    border-top: 37px dashed $white;
+  }
+}
+
+@-webkit-keyframes inner-tilt {
+  0%   { transform: rotate(0deg) scale(.6, .6) }
+  90%  { transform: rotate(0deg)
+  scale(.6, .6) }
+  100% { transform: rotate(-20deg) scale(.6, .6) }
+}
+
+@keyframes inner-tilt {
+  0%   { transform: rotate(0deg) scale(.6, .6) }
+  90%  { transform: rotate(0deg)
+  scale(.6, .6) }
+  100% { transform: rotate(-20deg) scale(.6, .6) }
+}
+
+
+#rectangle {
+	width: 30px;
+	height: 150px;
+	background: $lightblue;
+  border-radius: 12px 12px 0 0;
+  position: relative;
+  z-index: 100;
+  -webkit-animation: piledriver 4.4s infinite;
+  animation: piledriver 3.2s infinite;
+}
+
+@-webkit-keyframes piledriver {
+  0%   { transform: translateY(10%) }
+  1%   { transform: translateY(5%) }
+  100% { transform: translateY(-25%) }
+}
+
+@keyframes piledriver {
+  0%   { transform: translateY(10%) }
+  1%   { transform: translateY(5%) }
+  90%  { transform: translateY(-25%) }
+  100% {transform:
+  translateY(10%) }
+}
+
+
+#triangle {
+	border-top: 55px solid transparent;
+  border-bottom: 55px solid transparent;
+	border-right: 100px solid $yellow;
+  position: absolute;
+  top: 51%;
+  right: 12%;
+  z-index: 300;
+  animation: flash 9.6s infinite;
+}
+
+@keyframes flash {
+  0%   { opacity: 0.8 }
+  30%  { transform: rotate(0deg) }
+  32%  { transform: rotate(-20deg);
+         transform-origin: left }
+  34%  { transform: rotate(0deg) }
+
+  99%  { opacity: 0;
+         transform: rotate(0deg)
+  }
+  100% { opacity: 0.8;
+         border-right: 100px solid $yellow;
+         transform: rotate(-20deg) }
 }

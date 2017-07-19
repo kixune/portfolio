@@ -10,9 +10,11 @@ $(function() {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
+      var targetOffset = target.offset().top - $('nav').outerHeight(true);
+
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top
+          scrollTop: targetOffset 
         }, 700);
         return false;
       }

@@ -1,57 +1,49 @@
 // ELEMENTS
+#about {
+  background: $black;
+}
 
+#about * {
+  color: $white;
+}
 
 // CLASSES
+.container {
+  margin: 60px auto;
+  width: 600px;
+  text-align: center;
+}
 
-.name-wrapper {
+.name-wrap {
   width: auto;
   min-height: 200px;
 }
 
 .my-name {
+  color: $white;
   text-transform: lowercase;
-  opacity: 0.6;
+  letter-spacing: -3px;
   position: absolute;
   font-family: $arimo;
-  font-size: 3em;
-  margin: 0 10px;
-  letter-spacing: -2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  font-size: 4em;
+  margin: 20px 50px;
+
 
   &:first-child {
-    color: $lightblue;
-    z-index: 3;
 
     &::before{
-      content: "BARNABAS";
+      content: "Barnabas";
+
     }
+
   }
 
   &:nth-child(2) {
-    color: $yellow;
-    opacity: 1;
-    z-index: 2;
-    margin-top: 20px;
-
+    margin-top: 56px;
+    margin-left: 47px;
 
     &::before{
-      content: "CHAN";
+      content: "Chan";
     }
   }
-
-  &:last-child {
-    color: $lightpink;
-    margin-top: 40px;
-
-
-    &::before{
-      content: "XIN ZHI";
-    }
-  }
-
-
 }
-
-// IDS

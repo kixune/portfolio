@@ -20,12 +20,13 @@ nav {
 .bw-hover {
     position: fixed;
     font-family: $karla;
+    bottom: 0;
     right: 0;
     content: " ";
     width: 150px;
     height: 100px;
-    padding-top: 20px;
-    border-bottom-left-radius: 10%;
+    padding-top: 30px;
+    border-top-left-radius: 10%;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -38,7 +39,7 @@ nav {
     width: 140px;
     height: 70px;
 
-    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
     -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
     -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
     transition: all 0.5s ease-in-out, text-align, padding-top;
