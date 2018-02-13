@@ -1,16 +1,17 @@
 // ELEMENTS
-* {
-  box-sizing: border-box;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
 }
 
 body {
-  opacity: 1;
-  transition: 1.3s opacity;
-
-  &.fade {
-    opacity: 0;
-    transition: none;
-  }
+    // font-size: 62.5%;
 }
 
 body, section {

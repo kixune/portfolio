@@ -52,15 +52,13 @@
     opacity: 0; }
   100% {
     opacity: 1; } }
-* {
-  box-sizing: border-box; }
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
 
-body {
-  opacity: 1;
-  transition: 1.3s opacity; }
-  body.fade {
-    opacity: 0;
-    transition: none; }
+html {
+  box-sizing: border-box; }
 
 body, section {
   overflow: auto;
@@ -86,44 +84,31 @@ nav {
   position: fixed;
   top: 0; }
   nav ul {
-    list-style: none;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    nav ul li {
+      width: calc(100% / 3);
+      text-align: center; }
+    nav ul a {
+      display: block;
+      padding: 16px 0;
+      font-family: "Arimo", sans-serif, sans-serif; }
 
-.bw-hover {
-  position: fixed;
-  font-family: "Karla", sans-serif;
-  bottom: 0;
-  right: 0;
-  content: " ";
-  width: 150px;
-  height: 100px;
-  padding-top: 30px;
-  border-top-left-radius: 10%;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out; }
-  .bw-hover:hover {
-    opacity: 1;
-    text-align: center;
-    background-color: #0A0A0A;
-    color: #FFFFFF;
-    width: 140px;
-    height: 70px;
-    border-top-left-radius: 50%;
-    -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
-    -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
-    transition: all 0.5s ease-in-out, text-align, padding-top; }
-    .bw-hover:hover::after {
-      content: "back to top"; }
+.top {
+  display: flex;
+  justify-content: center;
+  border: solid 10px #0A0A0A; }
 
 .shape-wrap {
-  position: absolute;
-  left: 50%;
-  top: 30%;
+  position: relative;
+  align-self: center;
   width: 200px;
-  margin-left: -100px; }
+  margin-top: -50px;
+  margin-right: -50px; }
 
 .hex-wrap {
   position: absolute;
@@ -155,7 +140,7 @@ nav {
   .hexagon.inner:before {
     border-bottom: 37px solid #FFFFFF; }
   .hexagon.inner:after {
-    border-top: 37px dashed #FFFFFF; }
+    border-top: 37px solid #FFFFFF; }
 
 @-webkit-keyframes inner-tilt {
   0% {
@@ -171,7 +156,7 @@ nav {
     transform: rotate(0deg) scale(0.6, 0.6); }
   100% {
     transform: rotate(-20deg) scale(0.6, 0.6); } }
-#rectangle {
+.rectangle {
   width: 30px;
   height: 150px;
   background: #2BD7F2;
@@ -197,7 +182,7 @@ nav {
     transform: translateY(-25%); }
   100% {
     transform: translateY(10%); } }
-#triangle {
+.triangle {
   border-top: 55px solid transparent;
   border-bottom: 55px solid transparent;
   border-right: 100px solid #FFEA32;
@@ -211,23 +196,18 @@ nav {
   0% {
     opacity: 0.8; }
   30% {
-    transform: rotate(0deg); }
-  32% {
-    transform: rotate(-20deg);
-    transform-origin: left; }
-  34% {
+    opacity: 0;
     transform: rotate(0deg); }
   99% {
     opacity: 0;
     transform: rotate(0deg); }
   100% {
     opacity: 0.8;
-    border-right: 100px solid #FFEA32;
-    transform: rotate(-20deg); } }
-#about {
+    border-right: 100px solid #FFEA32; } }
+.about {
   background: #0A0A0A; }
 
-#about * {
+.about * {
   color: #FFFFFF; }
 
 .container {
@@ -254,51 +234,6 @@ nav {
     margin-left: 47px; }
     .my-name:nth-child(2)::before {
       content: "Chan"; }
-
-.proj-list {
-  margin-top: 80px;
-  margin-left: 10px; }
-  .proj-list ul {
-    list-style: none; }
-    .proj-list ul li {
-      font-size: 2.5em;
-      line-height: 2;
-      font-family: "Arimo", sans-serif;
-      font-weight: 700;
-      text-transform: capitalize; }
-
-.big-text {
-  font-size: 3em;
-  font-weight: 700;
-  color: #001D42; }
-
-#projects {
-  background-color: #001D42;
-  color: #FFFFFF; }
-
-iframe {
-  width: 80%;
-  height: 100%;
-  display: block;
-  margin: 0 auto; }
-
-.hidden {
-  width: 100%;
-  height: 50px;
-  display: block;
-  position: absolute;
-  bottom: 0;
-  right: 60px; }
-
-.secret {
-  overflow: hidden;
-  background-color: #000000; }
-
-#secret {
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: white; }
 
 .temp {
   background-color: #001D42;

@@ -12,9 +12,10 @@ $(function() {
 
       var targetOffset = target.offset().top - $('nav').outerHeight(true);
 
+
       if (target.length) {
         $('html, body').animate({
-          scrollTop: targetOffset 
+          scrollTop: targetOffset
         }, 700);
         return false;
       }

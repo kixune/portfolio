@@ -6,46 +6,22 @@ nav {
 
 
   ul {
-    list-style: none;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      margin: 0;
+      padding: 0;
+      list-style: none;
 
     li {
+        width: calc(100% / 3);
+        text-align: center;
     }
-  }
-}
 
-
-.bw-hover {
-    position: fixed;
-    font-family: $karla;
-    bottom: 0;
-    right: 0;
-    content: " ";
-    width: 150px;
-    height: 100px;
-    padding-top: 30px;
-    border-top-left-radius: 10%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-
-  &:hover {
-    opacity: 1;
-    text-align: center;
-    background-color: $black;
-    color: $white;
-    width: 140px;
-    height: 70px;
-
-    border-top-left-radius: 50%;
-    -webkit-transition: all 0.5s ease-in-out, text-align, padding-top;
-    -moz-transition: all 0.5s ease-in-out, text-align, padding-top;
-    transition: all 0.5s ease-in-out, text-align, padding-top;
-
-    &::after {
-      content: "back to top";
+    a {
+        display: block;
+        padding: 16px 0;
+        font-family: $arimo, sans-serif;
     }
   }
 }
