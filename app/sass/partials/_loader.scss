@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-#loader {
+.blinky {
   width: 40px;
   height: 40px;
   margin: 300px auto;
@@ -54,7 +54,7 @@
   }
 }
 
-#loading-text {
+.loading-text {
 
   -webkit-animation: three-dots 6s infinite ease-in-out;
   animation: three-dots 6s infinite ease-in-out;
